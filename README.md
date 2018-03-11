@@ -1,5 +1,5 @@
 # Weekend Challenge 1: Salary Calculator
-Create an application that records employee salaries and adds salaries up to report monthly costs. 
+Create an application that records employee salaries and adds salaries up to report monthly costs.
 
 ## Topics Covered
 - JavaScript
@@ -18,6 +18,13 @@ No files have been provided. Fork and clone this repository or create a new GitH
 
 ![Wireframe](salary-calc-wireframe.png)
 
+## Base Mode
+- [ x ] Input Fields that collects firstName, lastName, idNumber, jobTitle, annualSalary
+  - [  ] Submit button that collects data from input fields
+    - [  ] Store information collected in an array of an objects
+      - [  ] On click appends to the DOM
+        - [  ] On click clears input fields
+          - [  ] If total monthly costs exceeds $20,000 add a red background color to total monthly costs.
 ## Hard Mode
 Create a delete button that removes an employee from the DOM. For Hard mode, it does not need to remove that Employee's salary from the reported total.
 
@@ -29,7 +36,7 @@ Create an `Employee` class to store the information about each new employee in a
 
 Once the employee is deleted, update the total spend on salaries account for this employee's removal. This will require that the logic knows which element was removed. Look into jQuery's .data() function. You will need to do something both when the employee is added and when they are deleted.
 
-Add styling or extra functionality that fits with the theme of this assignment. 
+Add styling or extra functionality that fits with the theme of this assignment.
 
 ## Reminder About Modes
 

@@ -14,3 +14,6 @@ td, th {
 .totMC {
   margin: 25px;
 }
+#inputFN,#inputLN,#inputID,#inputJT,#inputAS {
+  margin: 5px;
+}

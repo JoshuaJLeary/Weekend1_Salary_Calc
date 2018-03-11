@@ -8,7 +8,7 @@ $(document).ready(readyNow)
 
 let employee = [];
 let person = {};
-let totMonCost = 0;
+// let totMonCost = 0;
 
 function readyNow(){
 submitClick();
@@ -24,14 +24,15 @@ class Employees {
     this.titleJob = people.titleJob
     this.salaryAnnual = people.salaryAnnual
     this.monthlyCost = people.monthlyCost
-    // this.totMonCost = people.totMonCost
+    this.totMonCost = 0
   }
 
 }
 
 function submitClick() {
   $('#submitB').on('click', function(){
-    let totMonCost = 0;
+    // let totMonCost = 0;
+    $('.totMC').empty();
     let btnClick = new Employees(person);
      btnClick.nameFirst = $('#inputFN').val();
      btnClick.nameLast = $('#inputLN').val();
@@ -51,13 +52,17 @@ function submitClick() {
 }
 
 function calcMonCost() {
+  totMonCost = 0;
   for(i = 0; i < employee.length; i++) {
-    totMonCost = 0;
+  // totMonCost = 0;
   totMonCost += employee[i].monthlyCost;
   console.log(totMonCost);
-
-  }
   // return totMonCost;
 // console.log(totMonCost);
+  }
+  if(totMonCost > 20000){
+    $('.totMC').append('Total Monthly Cost =' + totMonCost).addClass('tooMuch');
+  }else{
+    $('.totMC').append('Total Monthly Cost =' + totMonCost);
+  }
 }
-console.log('js');

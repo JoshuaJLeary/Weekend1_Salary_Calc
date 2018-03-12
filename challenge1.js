@@ -61,8 +61,8 @@ function calcMonCost() {
 // console.log(totMonCost);
   }
   if(totMonCost > 20000){
-    $('.totMC').append('Total Monthly Cost =' + totMonCost).addClass('tooMuch');
+    $('.totMC').append('Total Monthly Cost = ' + totMonCost).addClass('tooMuch');
   }else{
-    $('.totMC').append('Total Monthly Cost =' + totMonCost);
+    $('.totMC').append('Total Monthly Cost = ' + totMonCost);
   }
 }

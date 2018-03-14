@@ -1,3 +1,6 @@
+body {
+  background-color: #00ff99;
+}
 table {
   font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -16,4 +19,8 @@ td, th {
 }
 #inputFN,#inputLN,#inputID,#inputJT,#inputAS {
   margin: 5px;
+}
+#submitB {
+  border-radius: 8px;
+  background-color: #9900ff;
 }

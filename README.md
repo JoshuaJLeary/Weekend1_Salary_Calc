@@ -24,7 +24,7 @@ No files have been provided. Fork and clone this repository or create a new GitH
     - [ x ] Store information collected in an array of an objects
       - [ x ] On click appends to the DOM
         - [ x ] On click clears input fields
-          - [  ] If total monthly costs exceeds $20,000 add a red background color to total monthly costs.
+          - [ x ] If total monthly costs exceeds $20,000 add a red background color to total monthly costs.
 ## Hard Mode
 Create a delete button that removes an employee from the DOM. For Hard mode, it does not need to remove that Employee's salary from the reported total.
 
